@@ -1,10 +1,11 @@
-import "./App.scss";
-import ColorBox from "./components/ColorBox";
+// import "./App.scss";
+// import ColorBox from "./components/ColorBox";
+import Login from "./components/Login";
 function App() {
   return (
-    <div className="app">
-      <h1>Welcome</h1>
-      <ColorBox />
+    <div>
+      {/* <h1>Welcome</h1> */}
+      <Login />
     </div>
   );
 }
