@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Dashboard from "../Dashboard";
+import ChooseActor from "../ChooseActor";
 
 import "./Login.scss";
 import TextField from "@material-ui/core/TextField";
@@ -16,14 +17,12 @@ function Login() {
     setUserName(event.target.value);
   };
   function handleBoxClick() {
-    // alert("Chào mừng " + useName);
-    // ReactDOM.render(document.getElementById("root"));
     tick();
   }
   function tick() {
     const element = (
       <div>
-        <Dashboard />
+        <ChooseActor username={useName} />
       </div>
     );
     ReactDOM.render(element, document.getElementById("root"));

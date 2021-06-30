@@ -4,10 +4,10 @@ import "./Right.scss";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import imageRight1 from "../../assets/images/right1.png"; // Tell webpack this JS file uses this image
-import imageRight2 from "../../assets/images/right2.png"; // Tell webpack this JS file uses this image
-import imageRight3 from "../../assets/images/right3.png"; // Tell webpack this JS file uses this image
-import imageRight4 from "../../assets/images/right4.png"; // Tell webpack this JS file uses this image
+import imageRight1 from "../../../assets/images/right1.png"; // Tell webpack this JS file uses this image
+import imageRight2 from "../../../assets/images/right2.png"; // Tell webpack this JS file uses this image
+import imageRight3 from "../../../assets/images/right3.png"; // Tell webpack this JS file uses this image
+import imageRight4 from "../../../assets/images/right4.png"; // Tell webpack this JS file uses this image
 
 const useStyles = makeStyles((abc) => ({
   root: {

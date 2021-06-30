@@ -4,11 +4,11 @@ import "./Header.scss";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import imageLeft1 from "../../assets/images/left1.png"; // Tell webpack this JS file uses this image
-import imageTop1 from "../../assets/images/top1.png"; // Tell webpack this JS file uses this image
-import imageTop2 from "../../assets/images/top2.png"; // Tell webpack this JS file uses this image
-import imageTop3 from "../../assets/images/top3.png"; // Tell webpack this JS file uses this image
-import imageTop4 from "../../assets/images/top4.png"; // Tell webpack this JS file uses this image
+import imageLeft1 from "../../../assets/images/left1.png"; // Tell webpack this JS file uses this image
+import imageTop1 from "../../../assets/images/top1.png"; // Tell webpack this JS file uses this image
+import imageTop2 from "../../../assets/images/top2.png"; // Tell webpack this JS file uses this image
+import imageTop3 from "../../../assets/images/top3.png"; // Tell webpack this JS file uses this image
+import imageTop4 from "../../../assets/images/top4.png"; // Tell webpack this JS file uses this image
 const useStyles = makeStyles((abc) => ({
   root: {
     background: (props) => props.color,
@@ -19,7 +19,7 @@ const useStyles = makeStyles((abc) => ({
   },
   label: { fontFamily: (props) => props.font },
 }));
-function Header() {
+function Header(props) {
   function MyButton(props) {
     const classes = useStyles(props);
     return (
@@ -46,8 +46,8 @@ function Header() {
         font="Comic Sans MS"
         style={{ width: 271, height: 52 }}
         imageBG={imageLeft1}
-        text={"huuanh1987"}
-        styleText={{ marginTop: -25, color: "white" }}
+        text={props?.username}
+        styleText={{ marginTop: -25, color: "red" }}
         // onClick={onClickABC("sdsdsd")}
       />
       <MyButton

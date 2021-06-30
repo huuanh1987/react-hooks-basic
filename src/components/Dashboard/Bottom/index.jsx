@@ -5,13 +5,13 @@ import ReactDOM from "react-dom";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import imageBottom1 from "../../assets/images/Bottom1.png";
-import imageBottom2 from "../../assets/images/Bottom2.png";
-import imageBottom3 from "../../assets/images/Bottom3.png";
-import imageBottom4 from "../../assets/images/Bottom4.png";
-import imageBottom5 from "../../assets/images/Bottom5.png";
-import imageBottom6 from "../../assets/images/button6.png";
-import Login from "../Login";
+import imageBottom1 from "../../../assets/images/Bottom1.png";
+import imageBottom2 from "../../../assets/images/Bottom2.png";
+import imageBottom3 from "../../../assets/images/Bottom3.png";
+import imageBottom4 from "../../../assets/images/Bottom4.png";
+import imageBottom5 from "../../../assets/images/Bottom5.png";
+import imageBottom6 from "../../../assets/images/button6.png";
+import Login from "../../Login";
 const useStyles = makeStyles((abc) => ({
   root: {
     background: (props) => props.color,

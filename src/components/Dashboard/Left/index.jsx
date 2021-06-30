@@ -1,13 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
-import "./Center.scss";
+import "./Left.scss";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import Dinosaur1 from "../../assets/images/dinosaur/1.gif";
-import Dinosaur2 from "../../assets/images/dinosaur/2.gif";
-import Dinosaur3 from "../../assets/images/dinosaur/3.gif";
-import Dinosaur4 from "../../assets/images/dinosaur/4.gif";
+import imageLeft2 from "../../../assets/images/left2.png"; // Tell webpack this JS file uses this image
+import imageLeft3 from "../../../assets/images/left3.png"; // Tell webpack this JS file uses this image
 
 const useStyles = makeStyles((abc) => ({
   root: {
@@ -19,7 +17,7 @@ const useStyles = makeStyles((abc) => ({
   },
   label: { fontFamily: (props) => props.font },
 }));
-function Center() {
+function Left() {
   function MyButton(props) {
     const classes = useStyles(props);
     return (
@@ -41,14 +39,24 @@ function Center() {
   // }
 
   return (
-    <div style={{ marginLeft: 460, marginTop: -450 }}>
-      <img
-        src={Dinosaur4}
-        alt="loading..."
-        style={{ width: 300, rotate: 150 }}
+    <div>
+      <MyButton
+        font="Comic Sans MS"
+        style={{ width: 236, height: 88, marginTop: 30 }}
+        imageBG={imageLeft2}
+        // text={"huuanh1987"}
+        styleText={{ marginTop: -25, color: "white" }}
+        // onClick={onClickABC("sdsdsd")}
       />
+      <div>
+        <MyButton
+          style={{ width: 341, height: 96, marginTop: 30 }}
+          imageBG={imageLeft3}
+          styleText={{ marginTop: -25, color: "white" }}
+        />
+      </div>
     </div>
   );
 }
 
-export default Center;
+export default Left;
